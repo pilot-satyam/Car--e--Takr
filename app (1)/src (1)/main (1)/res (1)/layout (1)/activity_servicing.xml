@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".servicing"
+    android:background="#C4C4C4">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/p_services"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/servicing"
+                android:layout_marginLeft="50dp"/>
+
+            <ImageButton
+                android:id="@+id/ac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ac"
+                android:layout_below="@+id/p_services"
+                android:layout_marginLeft="50dp"/>
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/wheel"
+                android:layout_below="@+id/ac"
+                android:layout_marginLeft="50dp"/>
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                app:srcCompat="@drawable/cleaning" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="276dp"
+                android:layout_height="239dp"
+                android:layout_marginLeft="70dp"
+                app:srcCompat="@drawable/denting" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="254dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                app:srcCompat="@drawable/batteries_new" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

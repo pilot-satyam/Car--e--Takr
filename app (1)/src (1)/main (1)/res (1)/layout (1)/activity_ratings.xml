@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_backgrounf"
+    tools:context=".Ratings">
+
+    <RatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250sp"
+        android:numStars="5"
+        android:stepSize=".5" />
+
+    <Button
+        android:id="@+id/ratingbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="SUBMIT"
+        android:elevation="5dp"/>
+
+    <TextView
+        android:id="@+id/ratingtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="Your rating will appear here"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+    <Button
+        android:id="@+id/button_for_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Click here to Exit"
+        android:layout_below="@id/ratingtxt"
+        android:elevation="5dp"/>
+
+
+
+
+</RelativeLayout>

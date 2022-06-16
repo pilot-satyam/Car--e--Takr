@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mech_calling"
+    android:background="@drawable/gradient_backgrounf">
+
+    <ImageView
+        android:id="@+id/mech_cari"
+        android:layout_width="225dp"
+        android:layout_height="207dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        app:srcCompat="@drawable/mech_cari"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="153dp" />
+
+    <ImageButton
+        android:id="@+id/cancel"
+        android:layout_width="106dp"
+        android:layout_height="98dp"
+        android:layout_below="@+id/mech_cari"
+        android:layout_alignRight="@+id/mech_cari"
+        android:layout_marginTop="108dp"
+        android:layout_marginRight="-21dp"
+        android:onClick="Issue1"
+        app:srcCompat="@drawable/cancel"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="568dp"
+        android:elevation="5dp"/>
+
+    <ImageButton
+        android:id="@+id/call"
+        android:layout_width="108dp"
+        android:layout_height="97dp"
+        android:layout_below="@+id/mech_cari"
+        android:layout_alignLeft="@+id/mech_cari"
+        android:layout_marginLeft="-12dp"
+        android:layout_marginTop="107dp"
+        android:onClick="Calling"
+        app:srcCompat="@drawable/call"
+        tools:layout_editor_absoluteX="261dp"
+        tools:layout_editor_absoluteY="568dp"
+        android:elevation="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A mechanic has been assigned and will arrive soon."
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="459dp"
+        android:layout_below="@+id/mech_cari"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="50dp"
+        />
+
+  <!--      android:id="@+id/paymentbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MAKE PAYMENT"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/checkBox"
+        android:layout_marginTop="35dp"
+        android:onClick="Payment"
+        android:background="@drawable/button_round"
+        android:textColor="#ffffff"
+        android:elevation="5dp" />
+    <Button
+        android:id="@+id/BILL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DISPLAY BILL"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/paymentbtn"
+        android:layout_marginTop="35dp"
+        android:onClick="Payment"
+        android:background="@drawable/button_round"
+        android:textColor="#ffffff"
+        android:elevation="5dp" />-->
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Issue Resolved? If yes display bill"
+        android:onClick="IssueResolved"
+        android:layout_below="@id/cancel"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:fontFamily="cursive"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If no Click Here"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:fontFamily="cursive"
+        android:layout_below="@+id/checkBox"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:onClick="Issue1"
+        android:id="@+id/checkBox2"/>
+
+</RelativeLayout>

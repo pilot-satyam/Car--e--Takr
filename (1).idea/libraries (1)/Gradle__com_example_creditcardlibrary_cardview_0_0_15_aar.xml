@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.example.creditcardlibrary:cardview:0.0.15@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8efcb9cf9be69645f4f9b49a09fa9258/cardview-0.0.15/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8efcb9cf9be69645f4f9b49a09fa9258/cardview-0.0.15/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.example.creditcardlibrary/cardview/0.0.15/9fe3c140a4ed86280032b60df6c46040232d16b9/cardview-0.0.15-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

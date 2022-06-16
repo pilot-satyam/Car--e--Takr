@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gpayscreen">
+
+    <ImageView
+        android:id="@+id/gpayscreen"
+        android:layout_width="match_parent"
+        android:layout_height="767dp"
+        android:src="@drawable/gpayscreen" />
+
+    <Button
+        android:id="@+id/gpaymentsucces"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="-1dp"
+        android:background="@drawable/edit_round"
+        android:elevation="5dp"
+        android:onClick="payment_succesful"
+        android:text="CONTINUE" />
+
+</RelativeLayout>

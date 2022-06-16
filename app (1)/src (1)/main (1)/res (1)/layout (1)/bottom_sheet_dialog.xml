@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:padding="30dp"
+    >
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/gpaylogo"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/gpaaay"
+        android:elevation="5dp"
+        android:onClick="gpayscreen"
+        />
+
+    <ImageView
+        android:id="@+id/paytmmm"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/gpaaay"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="-3dp"
+        android:src="@drawable/paytmlogo"
+        android:elevation="5dp"
+        android:onClick="paytmscreen"/>
+    <ImageView
+        android:id="@+id/bhim"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bhim"
+        android:onClick="bhimscreen"
+        android:layout_below="@+id/gpaaay"
+        android:layout_marginTop="15dp"
+        android:elevation="5dp"
+        />
+    <ImageView
+        android:id="@+id/paypall"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/gpaaay"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="-3dp"
+        android:src="@drawable/paypal"
+        android:layout_below="@+id/paytmmm"
+        android:elevation="5dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bhim"
+        android:text="CREDIT CARD"
+        android:background="@drawable/edit_round"
+        android:layout_marginTop="25dp"
+        android:id="@+id/credit"
+        android:elevation="5dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/credit"
+        android:id="@+id/debiit"
+        android:text="DEBIT CARD"
+        android:background="@drawable/edit_round"
+        android:layout_marginTop="25dp"
+        android:elevation="5dp"
+        />
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:text="PAYMENT"
+        android:background="@drawable/button_round"
+        android:textColor="@color/white"
+        android:layout_below="@id/debiit"
+        android:layout_centerInParent="true"/>
+
+
+
+</RelativeLayout>

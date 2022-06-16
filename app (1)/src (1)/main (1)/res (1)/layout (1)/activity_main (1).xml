@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carbgm"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/caretakermain"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:background="#FFF59D"
+        app:srcCompat="@drawable/main_logo"
+        android:layout_margin="50dp"
+        android:elevation="5dp"/>
+
+
+
+    <Button
+        android:id="@+id/google"
+        android:layout_width="206dp"
+        android:layout_height="64dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button"
+        android:onClick="openGoogle"
+        android:text="Sign up with Google"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="224dp"
+        android:elevation="5dp"
+
+        tools:text="Continue with Google"
+        />
+    <ImageView
+        android:id="@+id/googlelogo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="-2dp"
+        android:layout_toLeftOf="@id/facebook"
+        android:background="#FFF59D"
+        app:srcCompat="@drawable/google"
+        android:layout_margin="15sp"
+        android:elevation="5dp"/>
+
+    <ImageView
+        android:id="@+id/fblogo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/google"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="-2dp"
+        android:layout_toLeftOf="@id/facebook"
+        android:background="#FFF59D"
+        app:srcCompat="@drawable/fb"
+        android:layout_margin="15sp"/>
+
+    <Button
+        android:id="@+id/facebook"
+        android:layout_width="206dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/google"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/facebook_button"
+        android:text="Sign up with Facebook"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="336dp"
+        tools:text="Continue with Facebook"
+        android:elevation="5dp"
+        />
+
+
+    <Button
+        android:id="@+id/newacc"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facebook"
+        android:layout_alignParentBottom="false"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_round"
+        android:onClick="newAcc"
+        android:text="Create a new Account"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/black"
+        android:elevation="5dp"/>
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newacc"
+        android:layout_alignLeft="@+id/newacc"
+        android:layout_marginTop="42dp"
+        android:background="#ffffff"
+        android:textColor="#000000"
+        android:text="Already have an account ?"
+        android:elevation="5dp"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="69dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/newacc"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_marginTop="38dp"
+        android:layout_marginRight="-72dp"
+        android:background="@drawable/login_button"
+        android:onClick="login"
+        android:text="Log in "
+        android:textColor="@android:color/white"
+        android:elevation="5dp"/>
+    <Button
+        android:id="@+id/credi"
+        android:layout_width="69dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/login"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_marginTop="38dp"
+        android:layout_marginRight="-72dp"
+        android:background="@drawable/login_button"
+        android:onClick="BottomSheet"
+        android:text="Log in "
+        android:textColor="@android:color/white"
+        android:elevation="5dp"/>
+
+
+
+    >
+</RelativeLayout>

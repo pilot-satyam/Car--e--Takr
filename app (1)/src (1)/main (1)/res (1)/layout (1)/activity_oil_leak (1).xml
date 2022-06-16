@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".oil_leak"
+    android:background="@drawable/gradient_backgrounf">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/gradient_backgrounf">
+
+
+
+            <TextView
+                android:id="@+id/head1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="20dp"
+                android:text="STEPS TO RESOLVE ENGINE OIL LEAK ISSUE"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:paddingTop="20sp"/>
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:videoId="yn2CTZ1MA_Q"
+            app:autoPlay="true"
+            android:id="@+id/youtube_player_view"
+            app:showFullScreenButton="false"/>
+
+            <TextView
+                android:id="@+id/step1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/newacc"
+                android:layout_centerHorizontal="true"
+                android:text="STEP 1 Inspect the Intake Gasket "
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@android:color/holo_red_light"/>
+
+            <ImageView
+                android:id="@+id/engine1"
+                android:layout_width="302dp"
+                android:layout_height="215dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/engine1" />
+
+            <TextView
+                android:id="@+id/point1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/newacc"
+                android:layout_alignLeft="@+id/engine1"
+                android:layout_centerHorizontal="true"
+                android:text="1. Inside the vehicle, there is a gasket that seals the manifold to the head."
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/point2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/newacc"
+                android:layout_alignLeft="@+id/point1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:text="2. These parts take the role of distribution the combustion mixture, along with the coolant to the separated intake port. These ports will be placed in the cylinder heads. "
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                />
+
+            <TextView
+                android:id="@+id/Step2"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:text="STEP2  Examine Further To Check The Head Gasket"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@android:color/holo_red_light" />
+
+            <ImageView
+                android:id="@+id/engine2"
+                android:layout_width="327dp"
+                android:layout_height="231dp"
+                android:layout_below="@+id/engine1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="-6dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/engine2" />
+
+            <TextView
+                android:id="@+id/point4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/newacc"
+                android:layout_alignLeft="@+id/engine1"
+                android:layout_centerHorizontal="true"
+                android:text="1. This is a car part that seals the cylinder head in order to prevent the coolant from getting to the cylinder. "
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/point5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/newacc"
+                android:layout_alignLeft="@+id/engine1"
+                android:layout_centerHorizontal="true"
+                android:text="2. Any leak or damage in this part creates an opportunity for the coolant to enter the chamber."
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/point6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:text="3.Long story short, it will create white smoke from exhaust pipe. If this part is still fine, we will check the cylinder."
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/step3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:text="STEP 3 Look For Any Crack In The Cylinder Head"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@android:color/holo_red_light"/>
+
+            <TextView
+                android:id="@+id/point7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="1. The cylinder head is the car part that made of aluminum, which is prone to breaking in overheated conditions. "
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/point8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:text="2.This part is essential since it connects to the engine block and head gasket. The cylinder head is the car part that made of aluminum, which is prone to breaking in overheated conditions "
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+            <ImageView
+                android:id="@+id/engine3"
+                android:layout_width="327dp"
+                android:layout_height="231dp"
+                android:layout_below="@id/engine2"
+                android:layout_marginLeft="25dp"
+                app:srcCompat="@drawable/engine3" />
+            <Button
+                android:id="@+id/callmech"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call Mechanic?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="25dp"
+                android:onClick="call_mechanic"
+                android:background="@drawable/button_round"
+                android:textColor="#ffffff"
+                android:elevation="5dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

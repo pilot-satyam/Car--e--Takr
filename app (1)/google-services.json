@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "285584894612",
+    "firebase_url": "https://multiscreen-7a09c.firebaseio.com",
+    "project_id": "multiscreen-7a09c",
+    "storage_bucket": "multiscreen-7a09c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:285584894612:android:6eaff8a809e3c51c20e281",
+        "android_client_info": {
+          "package_name": "com.example.multiscreen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "285584894612-hj0ju2epp0gntdvegfrfj34fstvp9nfd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.multiscreen",
+            "certificate_hash": "38d8ad665abb3afa29282aae50761c1713af6b49"
+          }
+        },
+        {
+          "client_id": "285584894612-8n9keofb2r9jfrcrh8luajg1b5ua6ujv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzKe4LVmg7tMdPUwzT2keql18z045qSqQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "285584894612-8n9keofb2r9jfrcrh8luajg1b5ua6ujv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

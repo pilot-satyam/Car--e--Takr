@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mechanicdetails"
+    android:background="@drawable/gradient_backgrounf">
+
+    <LinearLayout
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Media -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="194dp"
+                app:srcCompat="@drawable/media"
+                android:scaleType="centerCrop"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title, secondary and supporting text -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mechanic Name: Vijai Sitharan"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Garage: Sai Services"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textColor="?android:attr/textColorSecondary"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Near Bus Stop, Jungli Maharaj Mandir, JM Road, Shivaji Nagar, Pune - 411005"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textColor="?android:attr/textColorSecondary"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phonenum"
+                    android:text="Phone number: 955-557-5465"
+                    android:textSize="20sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textColor="?android:attr/textColorSecondary"/>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RATING 4.8/8"
+                    android:textSize="18dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/tv"
+                    android:textColor="?android:attr/textColorSecondary"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:background="@drawable/button_round"
+                    android:text="NEXT"
+                    android:id="@+id/nexbtn"
+                    android:layout_alignParentBottom="true"
+                    android:onClick="mech_calling"
+                    android:textColor="#ffffff"
+                    android:visibility="gone"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBar2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mechanic has been assigned and will arrive shortly"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textSize="14dp"
+                    android:layout_below="@+id/progressBar2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/loading2"
+                    android:visibility="invisible"
+                    android:elevation="5dp"/>
+
+            </RelativeLayout>
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

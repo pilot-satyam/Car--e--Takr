@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".call_mechanic"
+    android:background="@drawable/gradient_backgrounf">
+
+    <TextView
+        android:id="@+id/searching"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:elevation="5dp"
+        android:fontFamily="cursive"
+        android:text="Searching for Nearby Garages"
+        android:textColor="#882727"
+        android:textSize="24sp" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:elevation="5dp"
+
+        />
+    <TextView
+
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Searching Complete"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/progressbar"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        android:elevation="5dp"/>
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loading"
+        android:layout_marginTop="126dp"
+        android:paddingLeft="10dp"
+        android:text="Tip : You can decrease the pollution produced by your car by ensuring  that your car is well mainatined "
+        android:textColor="@android:color/black"
+        android:elevation="5dp"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="214dp"
+        android:layout_height="97dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/logo_main_2"
+        android:elevation="5dp"
+        />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/button_round"
+        android:onClick="Mechanicdetails"
+        android:paddingTop="10dp"
+        android:text="NEXT"
+        android:textColor="#ffffff"
+        android:visibility="gone"
+        android:elevation="5dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/next"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:paddingTop="10dp"
+        android:text="Display List of mechanics"
+        android:textColor="#ffffff"
+        android:onClick="Database"
+        android:id="@+id/list_mech"
+        android:background="@drawable/button_round"
+        android:elevation="5dp"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

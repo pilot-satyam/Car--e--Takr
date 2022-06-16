@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Location_pune">
+
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Fetching location"
+        android:layout_below="@+id/progressBar3"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/text3"
+
+        />
+
+    <ImageView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="606dp"
+        android:src="@drawable/map2"
+        android:layout_below="@+id/text3"
+        android:visibility="invisible"
+        />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mapview"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/button_round"
+            android:text="OPEN IN GOOGLE MAPS"
+            android:id="@+id/mapcont"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorWhite"
+            android:visibility="invisible"/>
+
+
+
+</RelativeLayout>

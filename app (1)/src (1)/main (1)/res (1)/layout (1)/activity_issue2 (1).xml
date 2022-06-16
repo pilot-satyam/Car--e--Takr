@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Issue1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/issue_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="100dp"
+                android:text="What's the Issue?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                tools:layout_editor_absoluteX="120dp"
+                tools:layout_editor_absoluteY="82dp" />
+
+            <TextView
+                android:id="@+id/flat_tyre_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/issue_text"
+                android:layout_marginLeft="50dp"
+                android:text="Flat Tyre"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                tools:layout_editor_absoluteX="49dp"
+                tools:layout_editor_absoluteY="393dp" />
+
+            <ImageView
+                android:id="@+id/flat_tyre_image"
+                android:layout_width="312dp"
+                android:layout_height="215dp"
+                android:layout_below="@id/flat_tyre_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="50dp"
+                app:srcCompat="@drawable/flat_tyre_3"
+                tools:layout_editor_absoluteX="49dp"
+                tools:layout_editor_absoluteY="421dp" />
+
+            <TextView
+                android:id="@+id/car_not_starting_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/flat_tyre_image"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:text="Car not starting?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                tools:layout_editor_absoluteX="49dp"
+                tools:layout_editor_absoluteY="142dp" />
+
+            <TextView
+                android:id="@+id/text_engine_oil_leak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/flat_tyre_image"
+                android:layout_marginLeft="50dp"
+                android:text="Engine Oil Leak"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

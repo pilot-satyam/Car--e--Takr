@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_backgrounf"
+    tools:context=".Payment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/paymenttext"
+        android:text="CHOOSE YOUR MODE OF PAYMENT"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logo"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Make payment"
+        android:id="@+id/paybutton"
+        android:layout_centerVertical="true"
+        android:background="@drawable/edit_round"
+        android:onClick="payment_succesful"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/logo_main_2"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/paybutton"
+        android:layout_marginTop="74dp"
+        app:srcCompat="@drawable/paytm" />
+
+    <ImageView
+        android:id="@+id/gpay"
+        android:layout_width="145dp"
+        android:layout_height="82dp"
+        android:layout_below="@+id/paybutton"
+        android:layout_marginLeft="-24dp"
+        android:layout_marginTop="78dp"
+        android:layout_toRightOf="@+id/imageView8"
+        app:srcCompat="@drawable/gpay" />
+
+    <ImageView
+        android:id="@+id/phonepay"
+        android:layout_width="111dp"
+        android:layout_height="81dp"
+        android:layout_below="@+id/paybutton"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/gpay"
+        app:srcCompat="@drawable/phonepay"
+        android:onClick="Creditcard"/>
+
+    <Button
+        android:id="@+id/cancelpay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANCEL PAYMENT"
+        android:layout_below="@+id/phonepay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:onClick="Issue1"
+        android:background="@drawable/button_round"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="review US"
+        android:layout_below="@+id/cancelpay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:onClick="Ratings"
+        android:background="@drawable/button_round"
+        android:textColor="#ffffff"/>
+
+
+</RelativeLayout>
